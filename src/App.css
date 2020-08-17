@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.inside-container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 10px;
+    
+}
+
+/* end of utilities classes */
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+ 
+.rocket1{
+background-image: url(https://i.imgur.com/WVJ9mkn.jpg);
+text-align: center;
+color: white;
+}
+
+.rocket{
+	text-align: center;
+}
+	
+
+.air-cover h1{
+	text-align: center;
+	background-color: violet;
+	color:white;
+}
+.air-cover2{
+	font-size: xx-large;
+}
+
+.air-cover{
+background-image: url(https://i.imgur.com/QaJy6WK.jpg);
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  
+} */
+
+ 
