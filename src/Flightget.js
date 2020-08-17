@@ -12,7 +12,7 @@ const Getit = ({ routes }) => {
 			<h2 className='rocket' key={i}> Flight Operator Name:{route.operators.map((operator, i) => {
 				return <p key={i}> Operator Name:{operator.name}</p>
 			})}</h2>
-						</Bounce>
+			</Bounce>
 		</div>
 		
 	})
