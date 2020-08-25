@@ -44,7 +44,8 @@ import Interiors from './Pages/Interiors';
 import Events from './Pages/Events';
 import Contact from './Pages/Contact';
 import Inspirations from './Pages/Inspirations';
-import Flight from './Flight.js'
+// import Flight from './Flight.js'
+import Apppy from './componentsss/Apppy';
 import Default from './Pages/Default';
 // import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -79,7 +80,7 @@ class App extends Component {
 						<Route path="/events" component={Events} />
 						<Route path="/contact" component={Contact} />
 						<Route path="/inspirations" component={Inspirations} />
-						<Route path='/airline' component={Flight} />
+						<Route path='/airline' component={Apppy} />
 						<Route component={Default} />
 					</Switch>
 					{ /*Common navbar for all Pages  */}

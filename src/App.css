@@ -32,7 +32,7 @@ background-image: url(https://i.imgur.com/WVJ9mkn.jpg);
 text-align: center;
 color: white;
 }
-
+/* 
 .rocket{
 	text-align: center;
 }
@@ -49,7 +49,7 @@ color: white;
 
 .air-cover{
 background-image: url(https://i.imgur.com/QaJy6WK.jpg);
-}
+} */
 
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
 
@@ -59,3 +59,26 @@ background-image: url(https://i.imgur.com/QaJy6WK.jpg);
 } */
 
  
+.Section_1{
+	background-color:white;
+	border: black 1px solid;
+
+}
+ 
+.Section_2{
+	background-color:white;
+	border: black 1px solid;
+
+}
+
+/* .footers{
+	position: static;
+	z-index: -1;
+} */
+
+ 
+.Section_3{
+		background-color:white;
+		border: black 1px solid;
+
+}

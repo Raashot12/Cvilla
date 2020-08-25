@@ -7,7 +7,7 @@ import BkImage from '../../images/home.jpg';
 export default function Header() {
 	return (
 		<HeroWrapper>
-			<div className="inside-container">
+			<div className="inside-container" id="home_page">
 				<div className="heroTexts">
 					<Bounce left duration={3000}>
 						<h1>Comfortable Rooms</h1>
