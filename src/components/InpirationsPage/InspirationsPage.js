@@ -8,34 +8,34 @@ export default function InspirationsPage() {
 		<React.Fragment>
 			<section className="inspirations">
 				<div className="inside-container">
-					<Title title="kind of inpirations" />
+					<Title title="kind of inpirations" colors="gold" />
 					<div className="inspirations-center">
 						{/* single inspiration */}
 						<Bounce left>
-						<div className="single-inspiration" style={{ backgroundImage: "url(images/decor1.jpg)" }}>
+							<div className="single-inspiration" style={{ backgroundImage: "url(images/decor1.jpg)" }}>
 
-						</div>
+							</div>
 						</Bounce>
 
 						{/* single inspiration */}
 						<Bounce left>
-						<div className="single-inspiration" style={{ backgroundImage: "url(images/decor2.jpg)" }}>
+							<div className="single-inspiration" style={{ backgroundImage: "url(images/decor2.jpg)" }}>
 
-						</div>
+							</div>
 						</Bounce>
 
 						{/* single inspiration */}
 						<Bounce left>
-						<div className="single-inspiration" style={{ backgroundImage: "url(images/decor3.jpg)" }}>
+							<div className="single-inspiration" style={{ backgroundImage: "url(images/decor3.jpg)" }}>
 
-						</div>
+							</div>
 						</Bounce>
 
 						{/* single inspiration */}
 						<Bounce left>
-						<div className="single-inspiration" style={{ backgroundImage: "url(images/decor4.jpg)" }}>
+							<div className="single-inspiration" style={{ backgroundImage: "url(images/decor4.jpg)" }}>
 
-						</div>
+							</div>
 						</Bounce>
 
 
