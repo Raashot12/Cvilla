@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Active from "./Active"
 import Cancelled from "./Cancelled";
@@ -11,38 +12,36 @@ import Unknown from './Unknown'
 
 
 
-  export default function Result (props) {
+export default function Result(props) {
 	return renderBasedOnStatus(props)
 }
 
-const renderBasedOnStatus = props =>{
+const renderBasedOnStatus = props => {
 	const { status, flightData, airportInfo, airportsInfo } = props;
-	switch(status){
+	switch (status) {
 		case "U":
-		return <Unknown />
+			return <Unknown />
 		case 'A':
-		return(
-			<Active flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} /> 
-		);
+			return (
+				<Active flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} />
+			);
 		case 'C':
-		return(
-			<Cancelled flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} />
-		);
+			return (
+				<Cancelled flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} />
+			);
 		case "L":
 			return (
 				<Landed flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} />
 			);
 
 		case "S":
-			return(
+			return (
 				< Scheduled flightData={flightData} airportInfo={airportInfo} airportsInfo={airportsInfo} />
 				// airportInfo = { airportInfo }
 			);
-			default:
-				return <p>Unavailable</p>
+		default:
+			return <p>Unavailable</p>
 
-	
+
 	}
-  };
-
-
+};

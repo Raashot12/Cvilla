@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { DatePicker, Select, InputNumber } from 'antd'
 // import './index.css';
+import Loading from './Loading'
 import Bounce from 'react-reveal/Bounce';
 import Result from '../Results/Result'
 
@@ -15,6 +16,7 @@ export default () => {
 	const [carrier, setCarrier] = useState("");
 	const [flightNum, setFlightNum] = useState("");
 	const [data, setData] = useState({});
+	const [loading, setLoading] = useState(false);
 
 	const onFlightNumChange = value => {
 		console.log(value);
@@ -33,7 +35,7 @@ export default () => {
 
 
 	const onSearch = () => {
-
+		setLoading(true)
 		if (!carrier || !date || !flightNum) {
 			alert("Carrier, flightNumber and Date is required")
 			return;
@@ -56,6 +58,7 @@ export default () => {
 			.then(data => data.json())
 			.then(finalData => {
 				setData(finalData)
+				setLoading(false)
 				console.log(finalData)
 			});
 	};
@@ -113,17 +116,18 @@ export default () => {
 					</div>
 				</div>
 				<div>
-					{data.flightStatuses && data.flightStatuses.length > 0 && (
-						<div className="result_Page">
-							<h1 style={{ color: 'white' }}>Search Response</h1>
-							<Result status={data.flightStatuses[0].status}
-								flightData={data.flightStatuses[0]}
-								airportInfo={data.appendix.airports[0]}
-								airportsInfo={data.appendix.airports[1]}
+					{loading ? <Loading /> :
+						data.flightStatuses && data.flightStatuses.length > 0 && (
+							<div className="result_Page">
+								<h1 style={{ color: 'white' }}>Search Response</h1>
+								<Result status={data.flightStatuses[0].status}
+									flightData={data.flightStatuses[0]}
+									airportInfo={data.appendix.airports[0]}
+									airportsInfo={data.appendix.airports[1]}
+								/>
+							</div>)
 
-							/>
-
-						</div>)}
+					}
 					{data.flightStatuses && data.flightStatuses.length === 0 && (
 						<h1> Oop! Sorry no info avaiable. Try later</h1>
 					)}

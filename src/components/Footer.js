@@ -18,14 +18,7 @@ export default function Footer() {
 									)
 								})
 							}
-							{/* <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/blog">BLOG</Link></li>
-                    <li><Link to="/biography">BIOGRAPHY</Link></li>
-                    <li><Link to="/interiors">INTERIORS</Link></li>
-                    <li><Link to="/events">EVENTS</Link></li>
-                    <li><Link to="/contacts">CONTACT</Link></li>
-                    <li><Link to="/inpirations">INSPIRATIONS</Link></li>
-                     */}
+
 						</ul>
 					</footer>
 				)
